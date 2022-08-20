@@ -30,8 +30,13 @@
             <li class="nav-item">
                 <a class="nav-link" href="#"> گالری</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#"> آموزش و پژوهش</a>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+             آموزش و پژوهش
+          </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="{% url 'place:history' %}">مقاله ها</a>
+                    <a class="dropdown-item" href="{% url 'place:part' %}">  کارگاه ها  </a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="{% url 'place:contact' %}"> تماس با ما</a>
@@ -45,5 +50,5 @@
             </li>
         </ul>
 
-    </div>
+        </div>
 </nav>

@@ -13,7 +13,7 @@ class places(models.Model):
     visit_day=models.CharField(max_length=60,verbose_name='روز بازدید')
     visit_hour=models.CharField(max_length=60,verbose_name='ساعت بازدید')
     rules=models.TextField(verbose_name=' قوانین و مقررات')
-    regeste=models.DateField(default=timezone.now(),verbose_name='تاریخ ثبت')
+    regester=models.DateField(default=timezone.now,verbose_name='تاریخ ثبت')
 
     def __str__(self) :
         return f'{self.place_name}'
