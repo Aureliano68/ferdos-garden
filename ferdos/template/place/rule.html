@@ -1,0 +1,39 @@
+{% extends 'maintemplate.html' %} {% block title %} بخش های باغ فردوس {% endblock title %} {% block content %}
+<div class="border_top">
+    <ul>
+        <i class="fa fa-balance-scale"></i>
+        <li id="f">
+            قوانین و مقررات
+        </li>
+    </ul>
+</div>
+
+<h4 id="h4">مکان های قابل بازدید در باغ فردوس:</h4>
+<hr>
+
+<div class="test">
+    {% for item in place %}
+    <div class="test2">
+        <p>{{item.id}}-{{item.place_name}}</p>
+        <p> روز های بازدید:{{item.visit_day}}</p>
+        <p>زمان بازدید:{{item.visit_hour}}</p>
+        <p> قوانین:{{item.rules}}</p>
+    </div>
+
+
+    {% endfor %}
+</div>
+
+<h4 id="h4">بهای بازدید از باغ فردوس:</h4>
+<hr>
+
+<div class="test">
+    {% for item in price %}
+    <div class="test3">
+        <p>بهای بلیط:{{item.places}}</p>
+        <p> برای بازدید کننده: {{item.visitor_group}}</p>
+        <p> بهاء:{{item.price}}</p>
+    </div>
+    <br> {% endfor %}
+</div>
+{% endblock content %}

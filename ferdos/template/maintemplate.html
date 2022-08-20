@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/bootstrap-rtl.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="icon" href="{{media_url}}image/fav/gardenFAV.png" type="image/ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+
+
+<title>
+    {% block title %} {% endblock title %}
+</title>
+</head>
+
+<body class="rtl">
+    {% include 'partial/header.html' %} {% include 'partial/navbar.html' %} {% block slider %} {% endblock slider %} {% block content %} {% endblock content %} {% include 'partial/scripts.html' %}
+
+
+</body>
+
+</html>

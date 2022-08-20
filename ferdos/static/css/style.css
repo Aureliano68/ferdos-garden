@@ -1,0 +1,205 @@
+@font-face {
+    font-family: 'yekan';
+    src: url('../font/Yekan.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'kodak';
+    src: url('../font/KoodakBold.eot') format('eot'), url('../font/KoodakBold.ttf') format('truetype'), url('../font/KoodakBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'bnazanin';
+    src: url('../font/BNaznnBd.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'bnazanin' !important;
+}
+
+.jumbotron {
+    background: rgb(159, 199, 171) !important;
+    padding: 2px 2px;
+    margin-bottom: 0px;
+    display: flex;
+}
+
+.circle {
+    width: 70px;
+    height: 70px;
+}
+
+h3 {
+    font-family: 'kodak'!important;
+    padding-top: 25px;
+    padding-right: 11px;
+}
+
+#logo_text {
+    color: rgb(82, 51, 51);
+}
+
+.formi {
+    position: relative;
+    right: 1050px;
+}
+
+.navi {
+    position: relative;
+    right: -30px;
+}
+
+.search {
+    color: rgb(93, 61, 61);
+}
+
+
+/* history start */
+
+.history {
+    padding: 50px;
+}
+
+.img_history {
+    position: relative;
+    right: 350px;
+    top: 20px;
+    width: 750px;
+    height: 450px;
+    border-radius: 10px;
+}
+
+
+/* history end */
+
+
+/* place start */
+
+.img300 {
+    width: 200px;
+    height: 200px;
+}
+
+.b {
+    width: 300px;
+}
+
+.description {
+    width: 300px;
+    max-height: 200px;
+    overflow: hidden;
+}
+
+.thumb {
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: 150px;
+    padding-top: 40px;
+}
+
+.text {
+    width: 700px;
+    position: relative;
+    right: 440px;
+    top: 50px;
+}
+
+#detail_edit_text {
+    text-align: justify;
+    font-size: medium;
+}
+
+.img_detail {
+    position: relative;
+    right: 350px;
+    top: 20px;
+    width: 850px;
+    height: 450px;
+    border-radius: 20px;
+}
+
+.border_top {
+    border: 1px solid #eaeaea;
+    text-decoration: none;
+    margin: 10px;
+    padding-top: 5px;
+}
+
+.test {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
+}
+
+.test2 {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(159, 199, 171) !important;
+    margin-right: 100px;
+    padding-right: 10px;
+    border-radius: 15px;
+}
+
+.test3 {
+    width: 200px;
+    height: 150px;
+    background-color: rgb(159, 199, 171) !important;
+    margin-right: 200px;
+    margin-top: 20px;
+    border-radius: 15px;
+    padding-right: 10px;
+}
+
+#f {
+    list-style: none;
+    display: inline;
+    padding: 10px;
+    color: #908888;
+}
+
+#h4 {
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.form_size {
+    width: 40px;
+}
+
+.form {
+    position: relative;
+    right: 100px;
+    width: 500px;
+    background-color: rgb(159, 199, 171) !important;
+    padding-right: 10px;
+    border: 1px;
+    border-style: solid;
+    border-radius: 10px;
+}
+
+.about {
+    position: absolute;
+    right: 900px;
+    top: 240px;
+    width: 500px;
+}
+
+.about_rule {
+    position: absolute;
+    right: 900px;
+    top: 400px;
+    width: 500px;
+}
+
+#a {
+    padding-right: 100px;
+}
+
+
+/* place end */

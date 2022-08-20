@@ -1,0 +1,37 @@
+{% extends 'maintemplate.html' %} {% block title %} جزییات بخش‌های باغ فردوس {% endblock title %} {% block content %}
+<div class="border_top">
+    <ul>
+        <i class="fa fa-map-signs	
+        "></i>
+        <li id="f">
+            بخش‌های باغ فردوس
+        </li>
+    </ul>
+</div>
+
+<h1>{{place.place_name}}</h1>
+<hr>
+
+<img src="{{media_url}}/{{place.image}}" alt="pic " class="img_detail">
+<div class="text">
+
+    <p id="detail_edit_text">{{place.info}}</p>
+</div>
+<div class="text">
+    <h4>روزهای بازدید:</h4>
+
+    <p id="detail_edit_text">{{place.visit_day}}</p>
+</div>
+
+<div class="text">
+    <h4>ساعات بازدید:</h4>
+
+    <p id="detail_edit_text"></p>{{place.visit_hour}}</p>
+</div>
+
+
+
+
+
+
+{% endblock content %}
