@@ -84,6 +84,8 @@ h3 {
 .img300 {
     width: 200px;
     height: 200px;
+    position: relative;
+    right: 20%;
 }
 
 .b {
@@ -96,11 +98,18 @@ h3 {
     overflow: hidden;
 }
 
+.border {
+    background-color: rgb(116, 83, 83);
+}
+
 .thumb {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: inherit;
     padding-right: 150px;
-    padding-top: 40px;
+    padding: 40px;
+    width: 1200px;
+    margin-right: 180px;
 }
 
 .text {
@@ -203,3 +212,56 @@ h3 {
 
 
 /* place end */
+
+
+/* blog start */
+
+.img_detail_article {
+    position: relative;
+    right: 540px;
+    top: 20px;
+    width: 500px;
+    height: 600px;
+    border-radius: 20px;
+}
+
+.text_aria {
+    position: relative;
+    right: 540px;
+    top: 10px;
+    color: rgb(171, 171, 171) !important;
+}
+
+.text_detail {
+    width: 700px;
+    position: relative;
+    right: 540px;
+    top: 10px;
+    color: rgb(171, 171, 171) !important;
+}
+
+.all_detail_cover {
+    background-color: rgb(159, 199, 171) !important;
+    width: 500px;
+}
+
+.down_link {
+    padding: 5px;
+    width: 100px;
+    height: 40px;
+    background-color: rgb(159, 199, 171) !important;
+}
+
+.download {
+    position: relative;
+    right: 740px;
+    top: 30px;
+    margin-bottom: 30px;
+}
+
+#down {
+    padding: 30px;
+}
+
+
+/* blog end */

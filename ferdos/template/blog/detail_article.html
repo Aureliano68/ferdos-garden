@@ -1,0 +1,42 @@
+{% extends 'maintemplate.html' %} {% block title %} مقالات مرتبط به باغ فردوس {% endblock title %} {% block content %}
+<div class="border_top">
+    <ul>
+        <i class="fa fa fa-file-pdf-o	
+        "></i>
+
+        <li id="f">
+            مقاله {{article.id}}
+        </li>
+    </ul>
+</div>
+<h4 id="h4">{{article.name_article}}</h4>
+<hr>
+
+<img src="{{media_url}}/{{article.image}}" alt="pic " class="img_detail_article">
+<div class="text_detail ">
+    <p> <i class="fa fa fa-calendar-o "></i> تاریخ انتشار:{{article.publish_date}} <i class="fa fa fa-eye
+        "></i>تعداد بازدید:{{article.view}}
+
+    </p>
+</div>
+<div class="text_detail download">
+    <div class="down_link">
+        <a href="{% url 'blog:pdf_path1' id=article.id %}" id="down">دانلود</a>
+    </div>
+
+</div>
+
+
+<div class="text">
+    چکیده مقاله:
+
+    <p id="detail_edit_text">{{article.text_little}}</p>
+</div>
+
+<div class="text">
+    <h6>_ کلمات کلیدی:</h6>
+
+    <p id="detail_edit_text"></p># {{article.key_words}}</p>
+</div>
+
+{% endblock content %} fa fa-at

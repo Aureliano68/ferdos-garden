@@ -22,6 +22,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('',include('apps.main.urls',namespace='main'),name='main'),
     path('place/',include('apps.place.urls',namespace='place'),name='place'),
+    path('blog/',include('apps.blog.urls',namespace='blog'),name='blog'),
 
 
 ]+static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
